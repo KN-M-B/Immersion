@@ -1,0 +1,125 @@
+body {
+  margin: 0px;
+}
+
+#div1 {
+  background-color: #3b415c;
+  font-family: Roboto;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  float: center;
+  align-items: center;
+  justify-content: center;
+}
+#div2 {
+  background-color: #272a3b;
+  height: 200px;
+  width: 700px;
+  float: center;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+#div3 {
+  background-color: lightgrey;
+  font-family: Roboto;
+  height: 75px;
+  width: 100%;
+  float: center;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+#div4 {
+  background-color: #3281ac;
+  line-height: 1.3;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 65px;
+  width: 120px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#div4:hover {
+  background-color: #3281ac00;
+  transition: 0.3s;
+}
+.HeaderButtons1 {
+  text-shadow: 4px 4px #5252522f;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 90px;
+  margin-left: 15px;
+  margin-right: 35px;
+  opacity: 0.6;
+  float: right;
+  margin-top: 8px;
+}
+
+.HeaderButtons1:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#div6 {
+  text-shadow: 4px 4px #5252522f;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  height: 50px;
+  width: 120px;
+  margin-left: 30px;
+  margin-right: 50px;
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+#div6:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#div7 {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 120px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+#steamlogo {
+  filter: invert(100%);
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+#tri {
+  margin-left: 10px;
+  filter: drop-shadow(2px 2px 2px #52525272);
+}
+
+#globe {
+  margin-left: -25px;
+  margin-right: 25px;
+  filter: drop-shadow(2px 2px 2px #52525272);
+}
