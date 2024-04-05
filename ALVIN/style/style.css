@@ -1,0 +1,48 @@
+
+/* ================================== */
+body{
+    margin: 10px;
+    padding: 10px;
+}
+nav{
+    width:1920px ;
+    padding: 10px;
+}
+ul{  background-color: #d9d9d9;
+    padding: 0px;
+}
+  
+li{
+    width: 100px;
+    height: 50px;
+    float: inline-start;
+    background-color: #d46a10;
+    list-style-type: none;
+    color: #1e202f;
+    padding: 135px 183px;
+    font-style: "Bahnschrift SemiBold SemiConden";
+}
+
+#banner{
+    height: 310px;
+    }
+#details{
+    height: 310px;
+    color: #ffffff;
+    padding: 100px 100px 100px;
+    background-image:url("../images/boko.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#details div{
+    background-color: #383b4e;
+    padding: 50px 50px;
+    
+}
+    
+ p{font-size: 20px;}
+ h1{font-size: 50px;}
+ p{font-style: italic;}
+ h1{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+li {font-style: inherit;}
