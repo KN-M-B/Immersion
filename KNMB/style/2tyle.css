@@ -4,17 +4,50 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 1000px) {
-    p {
-        padding-left: 10px!important;  
-        padding-right: 10px!important;    
-    }
-    li {
-        width: 80%!important;
-    }
+@media (max-width: 1550px) {
+  p {
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+  }
+  li {
+    width: 80% !important;
+  }
 }
 
-#headerRow {
+.ScrollSnap {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.ScrollSnapMark {
+  scroll-snap-align: start;
+}
+
+@media (max-width: 1350px) {
+  p {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+  li {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  p {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  li {
+    width: 80% !important;
+  }
+}
+
+.HeaderRow {
   width: 100%;
   height: 50px;
   background-color: #0e0e89;
@@ -52,22 +85,21 @@ body {
   transition: 0.3s;
 }
 
-
 .HeaderButton:hover {
-    height: 40px;
-    width: fit-content;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #ffffff;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    display: flex;
-    font-weight: bold;
-    color: #0e0e89;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-  }
+  height: 40px;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  display: flex;
+  font-weight: bold;
+  color: #0e0e89;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
 
 #headerTitle {
   height: 40px;
@@ -85,29 +117,27 @@ body {
   margin-right: auto;
   justify-self: flex-end;
   flex-grow: 1;
-  margin-right: 60%;
   transition: 0.3s;
 }
 
 #headerTitle:hover {
-    height: 40px;
-    width: fit-content;
-    font-size: 38px;
-    font-weight: bolder;
-    font-style: italic;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #ffffff00;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    margin-right: auto;
-    justify-self: flex-end;
-    flex-grow: 1;
-    margin-right: 59%;
-    transition: 0.3s;
-  }
+  height: 40px;
+  width: fit-content;
+  font-size: 38px;
+  font-weight: bolder;
+  font-style: italic;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff00;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  justify-self: flex-end;
+  flex-grow: 1;
+  transition: 0.3s;
+}
 
 .Main {
   width: 100%;
@@ -123,17 +153,16 @@ body {
   display: flex;
   color: white;
   justify-content: center;
-  max-width:100%;
+  max-width: 100%;
 }
 
 ul {
-    
-  max-width:100%;
+  max-width: 100%;
 }
 
 li {
-  width: 300px;
-  height: 30px;
+  width: 330px;
+  height: fit-content;
   margin-top: 3px;
   margin-bottom: 3px;
   list-style-type: square;
@@ -176,9 +205,53 @@ h2 {
   filter: invert(100%);
 }
 
-
 footer {
-    width: 100%;
-    height: 100px;
-    background-color: #0e0e89;
+  width: 100%;
+  height: 100px;
+  background-color: #0e0e89;
+}
+
+.Images {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#mainNavSet {
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.MainNavButton {
+  height: 300px;
+  transition: 0.3s;
+}
+
+.MainNavButton:hover {
+  height: 310px;
+  transition: 0.3s;
+  filter: invert(63%) sepia(96%) saturate(722%) hue-rotate(346deg)
+    brightness(101%) contrast(103%);
+}
+
+.MainNavButton2 {
+  height: 300px;
+  transition: 0.3s;
+}
+
+.MainNavButton2:hover {
+  height: 310px;
+  transition: 0.3s;
+  filter: invert(30%) sepia(89%) saturate(3182%) hue-rotate(212deg)
+    brightness(97%) contrast(100%);
 }
