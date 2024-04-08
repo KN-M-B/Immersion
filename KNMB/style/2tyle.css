@@ -15,7 +15,7 @@ body {
 }
 
 .ScrollSnap {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
   position: relative;
   width: 100%;
@@ -50,16 +50,26 @@ body {
 .HeaderRow {
   width: 100%;
   height: 50px;
-  background-color: #0e0e89;
+  background-color: #0e0e897d;
   float: center;
   display: flex;
   justify-content: right;
+  position: sticky; top: 0;
+  transition: 0.3s;
+}
+
+.HeaderRow:hover {
+  background-color: #0e0e89;
+  transition: 0.3s;
 }
 
 #banner {
   width: 100%;
-  height: 300px;
-  background-color: #d4d4d4;
+  height: 600px;
+  color: white;
+
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%,
+  #242424),url(assets/banner.jpg);
   float: center;
   display: flex;
   overflow: hidden;
@@ -73,11 +83,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #ffffff00;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
   display: flex;
-  border-width: 1px;
-  border-radius: 8px;
   color: white;
   align-items: center;
   justify-content: center;
@@ -91,19 +97,18 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #ffffff;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
   display: flex;
   font-weight: bold;
-  color: #0e0e89;
+  color: #0e0e897d;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
+  transition: 0.1s;
 }
 
 #headerTitle {
   height: 40px;
-  width: fit-content;
+  width: 200px;
   font-size: 33px;
   font-weight: bolder;
   font-style: italic;
@@ -122,7 +127,7 @@ body {
 
 #headerTitle:hover {
   height: 40px;
-  width: fit-content;
+  width: 200px;
   font-size: 38px;
   font-weight: bolder;
   font-style: italic;
@@ -250,4 +255,15 @@ a {
   transition: 0.3s;
   filter: invert(30%) sepia(89%) saturate(3182%) hue-rotate(212deg)
     brightness(97%) contrast(100%);
+}
+
+.MainNavButton3 {
+  height: 300px;
+  transition: 0.3s;
+}
+
+.MainNavButton3:hover {
+  height: 310px;
+  transition: 0.3s;
+  filter: invert(83%) sepia(57%) saturate(459%) hue-rotate(56deg) brightness(95%) contrast(94%);
 }
