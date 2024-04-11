@@ -1,0 +1,66 @@
+#formbox {
+    background-color: #242424a9;
+    width: fit-content;
+    padding: 3%;
+    height: fit-content;
+    color: white;
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    justify-content: center;
+    justify-items: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  form {
+    width: 600px;
+    text-align: center;
+    color: black;
+  }
+
+  input {
+    width: 66%;
+    border: none;
+    font: inherit;
+    margin-top: 5px;
+  }
+
+  label {
+    color: white;
+  }
+
+  #loginButton {
+    cursor: pointer;
+  }
+
+  .logreg {
+    background: none;
+    font: inherit;
+    outline: none;
+    color: white;
+    border: none;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    transition: 0.3s;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .logreg:hover {
+    background-color: #eaeaea;
+    color: #000000;
+    transition: 0.3s;
+  }
+
+  #bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("https://safebooru.org//images/2736/11bf27ece7490004537a7fee1bdf7ffcd87ac05d.png");
+    height: 100vh;
+  }

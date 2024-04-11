@@ -21,3 +21,28 @@ function bbb() {
     $("#formbox").load("real.html");
     console.log('call')
 }
+
+function login() {
+    //do not do login in JS on actual site. do it server side
+    var user = document.getElementById("user").value;
+    var pass = document.getElementById("pass").value;
+    var result = document.getElementById("result");
+
+    if (user.trim().length === 0) {
+      result.innerHTML = "Please enter your Username.";
+      result.style.color = "#ffff8d";
+    } else if (pass.trim().length === 0) {
+      result.innerHTML = "Please enter your Password.";
+      result.style.color = "#ffff8d";
+    } else if (user == "FAKE" && pass == "password") {
+      aaa();
+    } else if (user == "REAL" && pass == "wordpass") {
+      bbb();
+    } else {
+      result.innerHTML = "Incorrect Password or Username.";
+      result.style.color = "red";
+    }
+  }
+  function logout() {
+    $("#formbox").load("loginpage.html");
+  }
