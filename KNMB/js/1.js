@@ -10,3 +10,14 @@ function wipMessage() {
     Math.trunc(((var1 * 4) / 2 + (var2 + 10)) / 2 + 3.87298335 ** 2 + 9)
   );
 }
+
+
+function aaa() {
+    $("#formbox").load("fake.html");
+    console.log('call')
+}
+
+function bbb() {
+    $("#formbox").load("real.html");
+    console.log('call')
+}
