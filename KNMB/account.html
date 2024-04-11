@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Accouint</title>
+    <link href="style\3tyle.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src=".\js\1.js"></script>
+  </head>
+  <body>
+    <nav id="nav" class="HeaderRow ScrollSnapMark" style="z-index: 99;position:absolute;"></nav>
+    <main>
+      <section id="bg">
+        <div id="formbox">
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script>
+  $("#nav").load("nav.html");
+  $("#formbox").load("loginpage.html");
+
+  function login() {
+    //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+    var user = document.getElementById("user").value;
+    var pass = document.getElementById("pass").value;
+    var result = document.getElementById("result");
+  
+    if (user.trim().length === 0) {
+      result.innerHTML = "Please enter your Username.";
+      result.style.color = "#ffff8d";
+    } else if (pass.trim().length === 0) {
+      result.innerHTML = "Please enter your Password.";
+      result.style.color = "#ffff8d";
+    } else if (user == "FAKE" && pass == "password") { 
+        
+        $("#formbox").load("fake.html");
+
+    } else if (user == "REAL" && pass == "wordpass") { 
+        
+        $("#formbox").load("real.html");
+
+
+    } else {
+      result.innerHTML = "Incorrect Password or Username.";
+      result.style.color = "red";
+    }
+      //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+   //do not do login in JS on actual site. do it server side
+    
+  }
+  function logout() {
+    $("#formbox").load("loginpage.html");
+
+  }
+  
+</script>
+
+<style>
+
+  #formbox {
+    background-color: #242424a9;
+    width: fit-content;
+    padding: 3%;
+    height: fit-content;
+    color: white;
+    border-radius: 15px;
+    padding-top:50px;
+    padding-bottom:20px;
+    justify-content: center;
+    justify-items: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  form {
+    width: 600px;
+    text-align: center;
+    color:black;
+  }
+
+  input {
+    width: 66%;
+    border: none;
+    font: inherit;
+    margin-top: 5px;
+  }
+
+  label {
+    color: white;
+  }
+
+  #loginButton {
+    cursor: pointer;
+  }
+
+  .logreg {
+    background: none;
+    font: inherit;
+    outline: none;
+    color:white;
+    border: none;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    transition: 0.3s;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .logreg:hover {
+    background-color: #eaeaea;
+    color:#000000;
+    transition: 0.3s;
+  }
+
+  #bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("https://safebooru.org//images/2736/11bf27ece7490004537a7fee1bdf7ffcd87ac05d.png");
+    height: 100vh;
+  }
+</style>

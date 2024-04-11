@@ -14,6 +14,8 @@ body {
   }
 }
 
+
+
 .ScrollSnap {
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
@@ -54,7 +56,8 @@ body {
   float: center;
   display: flex;
   justify-content: right;
-  position: sticky; top: 0;
+  position: sticky;
+  top: 0;
   transition: 0.3s;
 }
 
@@ -68,8 +71,12 @@ body {
   height: 600px;
   color: white;
 
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%,
-  #242424),url(assets/banner.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      #242424
+    ),
+    url(assets/banner.jpg);
   float: center;
   display: flex;
   overflow: hidden;
@@ -89,6 +96,11 @@ body {
   justify-content: center;
   margin-right: 15px;
   transition: 0.3s;
+  background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .HeaderButton:hover {
@@ -265,5 +277,6 @@ a {
 .MainNavButton3:hover {
   height: 310px;
   transition: 0.3s;
-  filter: invert(83%) sepia(57%) saturate(459%) hue-rotate(56deg) brightness(95%) contrast(94%);
+  filter: invert(83%) sepia(57%) saturate(459%) hue-rotate(56deg)
+    brightness(95%) contrast(94%);
 }

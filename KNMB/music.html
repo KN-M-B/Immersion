@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music</title>
     <link href="style\2tyle.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src=".\js\1.js"></script>
   </head>
   <body>
     <div class="ScrollSnap">
-      <nav class="HeaderRow ScrollSnapMark">
-        <div id="headerTitle">
-          <a href="index.html" style="color: white">WEBSITE?</a>
-        </div>
-        <div class="HeaderButton">FAQ</div>
-        <div class="HeaderButton">ABOUT US</div>
-        <div class="HeaderButton">USELESSBUTTON</div>
-        <div class="HeaderButton">yuh uh</div>
-        <div class="HeaderButton">nuh uh</div>
+      <nav id="nav" class="HeaderRow ScrollSnapMark" style="z-index: 99;position:absolute;">
+        
       </nav>
 
       <main>
@@ -313,7 +308,10 @@
           </p>
         </section>
         <div class="ScrollSnapMark">
-          <h2 class="Center" style="color: white;margin-top:-100px; margin-bottom: -10px">
+          <h2
+            class="Center"
+            style="color: white; margin-top: -100px; margin-bottom: -10px"
+          >
             DISCOGRAPHY
           </h2>
         </div>
@@ -393,3 +391,7 @@
     </div>
   </body>
 </html>
+
+<script>
+  $('#nav').load("nav.html");
+</script>

@@ -47,6 +47,11 @@ a {
   justify-content: center;
   margin-right: 15px;
   transition: 0.3s;
+  background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .HeaderButton:hover {
@@ -167,7 +172,7 @@ a {
   float: right;
 }
 .titleB {
-direction:rtl;
+  direction: rtl;
   float: right;
   width: 68%;
   height: 100px;
@@ -193,7 +198,7 @@ direction:rtl;
 }
 
 .descB {
-    direction:rtl;
+  direction: rtl;
   float: right;
   width: 68%;
   height: 450px;
@@ -212,3 +217,4 @@ direction:rtl;
     margin-inline-end: 120px;
   }
 }
+

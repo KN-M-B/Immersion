@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website?</title>
     <link href="style\2tyle.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src=".\js\1.js"></script>
   </head>
   <body>
-    <nav class="HeaderRow">
-      <div id="headerTitle">
-        <a href="index.html" style="color: white">WEBSITE?</a>
-      </div>
-      <div class="HeaderButton">FAQ</div>
-      <div class="HeaderButton">ABOUT US</div>
-      <div class="HeaderButton">USELESSBUTTON</div>
-      <div class="HeaderButton">yuh uh</div>
-      <div class="HeaderButton">nuh uh</div>
+    <nav id="nav" class="HeaderRow" style="z-index: 99;position:absolute;">
+
+      
     </nav>
+    
 
     <main>
       <section id="banner">
-        <div id="space"><h1 style="font-size: 150px;text-shadow: 1px 4px 16px black;">WEBSITE?</h1></div>
+        <div id="space">
+          <h1 style="font-size: 150px; text-shadow: 1px 4px 16px black">
+            WEBSITE?
+          </h1>
+        </div>
         <!-- <img
           src="https://media.tenor.com/t4qJ44PVpw4AAAAi/ado-singer.gif"
           alt=""
@@ -30,7 +31,11 @@
         /> -->
       </section>
 
-      <section class="Center" id="mainNavSet" style="background-color: rgba(255, 255, 255, 0);">
+      <section
+        class="Center"
+        id="mainNavSet"
+        style="background-color: rgba(255, 255, 255, 0)"
+      >
         <div style="width: 450px; height: 350px">
           <h1 style="color: white; font-size: 30px">GAMES</h1>
           <a href="vidya.html">
@@ -52,37 +57,39 @@
               class="Invert MainNavButton2"
           /></a>
         </div>
-      <div style="width: 450px; height: 350px">
-        <h1 style="color: white; font-size: 30px">LIGHT NOVELS | MANGA</h1>
-        <a href="ln.html">
-          <img
-            src="style\assets\book.svg"
-            alt=""
-            height="320px"
-            class="Invert MainNavButton3"
-        /></a>
-      </div>
-    </section>
+        <div style="width: 450px; height: 350px">
+          <h1 style="color: white; font-size: 30px">LIGHT NOVELS | MANGA</h1>
+          <a href="ln.html">
+            <img
+              src="style\assets\book.svg"
+              alt=""
+              height="320px"
+              class="Invert MainNavButton3"
+          /></a>
+        </div>
+      </section>
     </main>
 
     <footer>
       <nav class="HeaderRow" style="justify-content: left">
-        <li class="HeaderButton" style="margin-top: 25px">
+        <li class="HeaderButton" onclick="wipMessage()" style="margin-top: 25px">
           button_to_socials_1
         </li>
-        <li class="HeaderButton" style="margin-top: 25px">
+        <li class="HeaderButton" onclick="wipMessage()" style="margin-top: 25px">
           button_to_socials_2
         </li>
-        <li class="HeaderButton" style="margin-top: 25px">
+        <li class="HeaderButton" onclick="wipMessage()" style="margin-top: 25px">
           button_to_socials_3
         </li>
-        <li class="HeaderButton" style="margin-top: 25px">contact_4</li>
-        <li class="HeaderButton" style="margin-top: 25px">contact_5</li>
+        <li class="HeaderButton" onclick="wipMessage()" style="margin-top: 25px">contact_4</li>
+        <li class="HeaderButton" onclick="wipMessage()" style="margin-top: 25px">contact_5</li>
       </nav>
     </footer>
   </body>
 
-  <style>
-       
-  </style>
+
 </html>
+
+<script>
+  $('#nav').load("nav.html");
+</script>
