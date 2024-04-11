@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="with=device-width, initial-scale1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale1.0" />
 
     <title>Document</title>
-    <link href="style/style.css" rel="stylesheet">
-
-</head>
-<body>
+    <link href="style/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
     <main>
-        <nav id="main-nav" class="nav">
-            <ul>
-                <li>PLAY FOR FREE</li>
-                <li>MONTHLY PLAYERS</li>
-                <li>NEWS</li>
-                <li>FAQ</li>
-                <li>SELECT LANGUAGE</li>
-            </ul>
-        </nav>
-        <section id="banner">
-            
-        </section>
+      <nav id="main-nav" class="nav"></nav>
+      <section id="banner"></section>
 
-        <section id="details">
-            <div>
-                <h1>THE NEXT ERA OF COUNTER-STRIKE IS HERE!</h1>
-                <p>Counter-Strike 2 is the largest technical leap forward in Counter-Strike’s history, ensuring new features and updates for years to come.
-                <p>Counter-Strike 2 is a free upgrade to CS:GO. So build your loadout, hone your skills, and prepare yourself for what’s next!</p>
-                <p>Read on to learn more about some of the features of Counter-Strike 2.</p>
-            </div>
-        </section>
-
+      <section id="details">
+        <div>
+          <h1>THE NEXT ERA OF COUNTER-STRIKE IS HERE!</h1>
+          <p>
+            Counter-Strike 2 is the largest technical leap forward in
+            Counter-Strike’s history, ensuring new features and updates for
+            years to come.
+          </p>
+          <p>
+            Counter-Strike 2 is a free upgrade to CS:GO. So build your loadout,
+            hone your skills, and prepare yourself for what’s next!
+          </p>
+          <p>
+            Read on to learn more about some of the features of Counter-Strike
+            2.
+          </p>
+          <button onclick="alvin()">click</button>
+          <button onclick="alvin2()">click to show console</button>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
+<script>
+  $("#main-nav").load("nav.html");
+  function alvin() {
+    alert(1+1);
+    alert(1-1);
+    alert(1*1);
+    alert(1/1);
+}
+    function alvin2(){
+        var number1 = 1;
+        var number2 = 1;
+
+    // console.log(number1+number2);
+    // console.log(number1-number2);
+    // console.log(number1*number2);
+    // console.log(number1/number2);
+    number1++;
+    number2--;
+    console.log(number1==number2);
+    console.log(number1===number2);
+    console.log(number1!=number2);
+    console.log(number1>number2);
+    console.log(number1<number2);
+    console.log(number1<=number2);              
+    console.log(number1>=number2);
+
+    number1 =1;
+    number2 =1;
+
+    if(number1 == number2){
+        console.log('genchana');
+    }else if(number1 == number2){
+        console.log('yamate');
+    }else{
+        console.log('thank you!');
+    }
+}
+</script>

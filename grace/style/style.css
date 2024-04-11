@@ -46,7 +46,6 @@ li{
 
 #details div{
     background-color: #262b43;
-    padding: 40px;
 }
 
 h1{
@@ -54,6 +53,7 @@ h1{
     font-style: normal;
     text-align: center;
 }
+
 
 p{
     font-size: 20px;
